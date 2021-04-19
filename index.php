@@ -31,7 +31,7 @@
                 header('location: index.php?vista=read');
                 break;
             case 'update':
-                $datos = $crud->reqId($_REQUEST['id']);
+                $datos = $crud->req($_REQUEST['id']);
                 require_once 'view/update.php';
                 break;
             case 'set_update':
@@ -42,18 +42,16 @@
                         'edad' => $_POST['edad'],
                         'email' => $_POST['email']
                     );
-                    print_r($datos);
                     $crud->update($datos);
                 }
                 header('location: index.php?vista=read');
                 break;
-            
             default:
-                # code...
+                header('location index.php?vista=read');
                 break;
         }
     }else{
-        header('location index.php?vista=read');
+        include_once 'view/home.php';
     }
     
 ?>

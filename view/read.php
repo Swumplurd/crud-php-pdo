@@ -26,7 +26,7 @@
                         <td><?php echo $dato['nombre'] ?></td>
                         <td><?php echo $dato['edad'] ?></td>
                         <td><?php echo $dato['email'] ?></td>
-                        <td><a class="btn btn-warning" href="index.php?vista=update&id=<?php echo $dato['id']?>">Actualizar</a></td>
+                        <td><a class="btn btn-warning" href="index.php?vista=update&id=<?php echo $dato['id'] ?>">Actualizar</a></td>
                         <td><a class="btn btn-danger" href="index.php?vista=delete&id=<?php echo $dato['id']?>">Eliminar</a></td>
                     </tr>
                 <?php
@@ -35,6 +35,5 @@
                 </tbody>
             </table>
         </div>
-        
     </div>
 </div>
