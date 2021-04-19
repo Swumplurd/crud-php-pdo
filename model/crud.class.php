@@ -49,5 +49,14 @@
             $this->conexion = null;
             return $stmt;
         }
+
+        public function reqId($id) {
+            $query = 'SELECT id FROM persona WHERE id = :id';
+            $stmt = $this->conexion->prepare($query);
+            $stmt->bindParam(':id', $id);
+            $stmt->execute();
+            $this->conexion = null;
+            return $stmt;
+        }
     }
 ?>

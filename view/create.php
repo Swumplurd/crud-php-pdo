@@ -15,6 +15,5 @@
                 <button class="btn btn-success">Agregar</button>
             </form>
         </div>
-        
     </div>
 </div>

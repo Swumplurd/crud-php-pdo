@@ -3,6 +3,7 @@
         <div class="col">
             <form action="index.php?vista=set_update" method="post">
                 <div class="form-group">
+                  <input type="text" name="id" id="id" hidden value="<?php echo $_GET['id']?>">
                   <label for="nombre">Nombre</label>
                   <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre" aria-describedby="helpId">
                   <label for="edad">Edad</label>
