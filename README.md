@@ -76,20 +76,6 @@ php -S localhost:8000
 
 Luego abre el navegador en [http://localhost:8000](http://localhost:8000).
 
-## Rutas disponibles
-
-El enrutamiento se gestiona mediante el parámetro GET `vista` en `index.php`.
-
-| URL | Descripción |
-|-----|-------------|
-| `/index.php` | Página de inicio |
-| `/index.php?vista=read` | Listado de personas |
-| `/index.php?vista=create` | Formulario para agregar persona |
-| `/index.php?vista=set_create` | Procesa el alta (POST) |
-| `/index.php?vista=update&id={id}` | Formulario para editar persona |
-| `/index.php?vista=set_update` | Procesa la edición (POST) |
-| `/index.php?vista=delete&id={id}` | Elimina una persona y redirige al listado |
-
 ## Dependencias frontend
 
 Las librerías están incluidas localmente en `public/` y no requieren conexión a internet ni instalación adicional.
