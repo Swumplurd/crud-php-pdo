@@ -2,7 +2,7 @@
     class Crud {
         private object $conexion;
         private string $host = 'localhost';
-        private string $user = 'root';
+        private string $user = 'crud_user';
         private string $db = 'pdo';
         private string $password = '';
 
